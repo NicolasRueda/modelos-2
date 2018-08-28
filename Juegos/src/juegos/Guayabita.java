@@ -19,6 +19,7 @@ public class Guayabita {
                 System.out.println("dinero j1:" + apuestaJugador1);
                 System.out.println("dinero j2:" + apuestaJugador2);
                 System.out.println("dinero mesa:" + apuestaMesa);
+                
                 return 2;
             }else if (apuestaJugador2 <= 0){
                 System.out.println("dinero j1:" + apuestaJugador1);
@@ -29,36 +30,90 @@ public class Guayabita {
                 System.out.println("dinero j1:" + apuestaJugador1);
                 System.out.println("dinero j2:" + apuestaJugador2);
                 System.out.println("dinero mesa:" + apuestaMesa);
-                return Guayabita(apuestaJugador1 - 500,apuestaJugador2 - 500, 
-                        apuestaMesa + 1000,1 , 1, Dado(), 
+                return Guayabita(apuestaJugador1 - 1000,apuestaJugador2 - 1000, 
+                        apuestaMesa + 2000,1 , 1, Dado(), 
                         100, 0);
             }
         }
         if(turno == 1){
             if(jugador == 1){
                 if(dado == 1){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1 - apuestaNueva,apuestaJugador2, 
                         apuestaMesa + apuestaNueva,2 , 1, Dado(), 
                         100, 0);
                 }else if(dado == 6){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1 + apuestaNueva,apuestaJugador2, 
                         apuestaMesa - apuestaNueva,2 , 1, Dado(), 
                         100, 0);
                 }else{
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2, 
                         apuestaMesa,1 , 2, Dado(), 
                         apuesta(), dado);
                 }
             }else{
                 if(dado == 1){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2 - apuestaNueva, 
                         apuestaMesa + apuestaNueva,1 , 1, Dado(), 
                         100, 0);
                 }else if(dado == 6){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2 + apuestaNueva, 
                         apuestaMesa - apuestaNueva,1 , 1, Dado(), 
                         100, 0);
                 }else{
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2, 
                         apuestaMesa,2 , 2, Dado(), 
                         apuesta(), dado);
@@ -67,21 +122,57 @@ public class Guayabita {
             
         }else if(turno == 2){
             if(jugador == 1){
-                if(dadoAnterior <= dado){
+                if(dadoAnterior > dado){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1 - apuestaNueva,apuestaJugador2, 
                         apuestaMesa + apuestaNueva,2 , 1, Dado(), 
                         100, 0);
                 }else{
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1 + apuestaNueva,apuestaJugador2, 
                         apuestaMesa- apuestaNueva,2 , 1, Dado(), 
                         100, 0);
                 }
             }else if(jugador == 2){
-                if(dadoAnterior <= dado){
+                if(dadoAnterior > dado){
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2 - apuestaNueva, 
                         apuestaMesa + apuestaNueva,1 , 1, Dado(), 
                         100, 0);
                 }else{
+                    System.out.println("dinero j1:" + apuestaJugador1);
+                    System.out.println("dinero j2:" + apuestaJugador2);
+                    System.out.println("dinero mesa:" + apuestaMesa);
+                    System.out.println("Jugador:" + jugador);
+                    System.out.println("Turno:" + turno);
+                    System.out.println("Apuesta nueva:" + apuestaNueva);
+                    System.out.println("Dado actual:" + dado);
+                    System.out.println("Dado Anterior:" + dadoAnterior + "\n");
+
                     return Guayabita(apuestaJugador1,apuestaJugador2 + apuestaNueva, 
                         apuestaMesa- apuestaNueva,1 , 1, Dado(), 
                         100, 0);

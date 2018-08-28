@@ -16,7 +16,7 @@ public class Juegos {
      */
     public static void main(String[] args) {
         Guayabita a = new Guayabita();
-        System.out.println(a.Guayabita(10000, 10000, 4000, 1, 1, a.Dado(), 100, 0));
+        System.out.println(a.Guayabita(10000, 10000, 2000, 1, 1, a.Dado(), 100, 0));
         
     }
     
